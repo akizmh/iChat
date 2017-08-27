@@ -1,0 +1,115 @@
+<div class="webim_user" id="icon-chat"><img src="/style/img/chat/webim_online.gif" />
+</div>
+<div id="chat-dialog-contact" class="webim_userlist">
+    <div class="webim_user_top">
+        <span class="webim_user_top_title">最近联系人</span>
+        <span class="webim_user_top_clear" id="btn-list-clear" title="清空联系人">清空</span>
+        <span class="webim_user_top_min" id="btn-list-min" title="最小化">最小化</span>
+    </div>
+    <div class="webim_user_list">
+        <ul id="chat-contact-list">
+            <li id="chat-tpl-list-contact" class="chat-contact webim_hidden"><img src="/style/img/chat/webim_online.gif" /><input type="hidden" class="socketId" /><span class="chat-contact-name">&nbsp;</span></li>
+        </ul>
+    </div>
+</div>
+<div class="webim_chat" id="chat-dialog">
+    <div class="webim_chat_top">
+        <img src="/style/img/chat/webim_online.gif" />
+        <span class="webim_chat_top_username" id="chat-user-name">&nbsp;</span>
+        <span class="webim_chat_top_condition" id="chat-user-status">&nbsp;</span>
+        <span class="webim_chat_top_close" id="btn-dialog-close" title="关闭">关闭</span>
+        <span class="webim_chat_top_min" id="btn-dialog-min" title="最小化">最小化</span>
+    </div>
+    <div class="webim_chat_main">
+        <div class="webim_chat_main_left">
+            <div class="webim_chat_main_left_content" id="chat-msg-list">
+                <div class="webim_hidden" id="chat-tpl-message">
+                    <p class="chat-msg-info"><span class="webim_chat_content_username chat-msg-user">&nbsp;</span><span class="webim_chat_content_time chat-msg-time">&nbsp;</span></p>
+                    <p class="webim_chat_content_p chat-msg-content">&nbsp;</p>
+                </div>
+            </div>
+            <div class="webim_chat_main_left_ctrl">
+                <span class="webim_chat_ctrl_face" id="btn-chat-face" title="表情">表情</span>
+                <span class="webim_chat_ctrl_clear" id="btn-chat-clear" title="清除屏幕消息">清屏</span>
+                <!-- <span class="webim_chat_ctrl_adduser" id="btn-chat-add-user" title="添加好友到成员列表">添加</span> -->
+                <span class="webim_chat_ctrl_chatlog" id="btn-chat-log">聊天记录</span>
+            </div>
+            <form id="chat-form" name="chat-form" method="post" action="#">
+                <div class="webim_chat_main_left_ipt">
+                    <textarea name="textfield" class="webim_chat_main_left_ip" id="chat-content"></textarea>
+                </div>
+                <div class="webim_chat_main_left_etr">
+                    <input class="webim_chat_main_left_et" name="提交" type="submit" value="发送" />
+                    <span class="webim_chat_main_left_cs" id="btn-send-type">选择</span>
+                </div>
+            </form>
+            <div class="webim_chat_left_send" id="chat-send-type" >
+                <p id="chat-send-type-ctrl" class="on">按Ctrl+Enter发送</p>
+                <p id="chat-send-type-enter">按Enter发送</p>
+            </div>
+            <div class="webim_chat_face" id="chat-face">
+                <ul>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/0.gif" title="惊讶" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/1.gif" title="撇嘴" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/2.gif" title="色" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/3.gif" title="发呆" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/4.gif" title="得意" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/5.gif" title="流泪" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/6.gif" title="害羞" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/7.gif" title="闭嘴" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/8.gif" title="睡" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/9.gif" title="大哭" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/10.gif" title="尴尬" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/11.gif" title="发怒" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/12.gif" title="调皮" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/13.gif" title="呲牙" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/14.gif" title="微笑" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/15.gif" title="难过" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/16.gif" title="酷" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/17.gif" title="闭嘴" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/18.gif" title="抓狂" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/19.gif" title="吐" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/20.gif" title="偷笑" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/21.gif" title="可爱" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/22.gif" title="白眼" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/23.gif" title="傲慢" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/24.gif" title="饥饿" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/25.gif" title="困" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/26.gif" title="惊恐" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/27.gif" title="流汗" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/28.gif" title="憨笑" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/29.gif" title="大兵" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/30.gif" title="奋斗" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/31.gif" title="咒骂" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/32.gif" title="疑问" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/33.gif" title="嘘" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/34.gif" title="晕" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/35.gif" title="折磨" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/36.gif" title="衰" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/37.gif" title="骷髅" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/38.gif" title="敲打" /></li>
+                    <li onclick="webim_chat_faceimg()"><img src="/style/img/chat/Face/39.gif" title="再见" /></li>
+                </ul>
+            </div>
+            <!-- <div class="webim_chat_adduserlist" id="chat-dialog-add-user">
+                <p>添加成员(共<span id="chat-all-user-num">0</span>位好友)</p>
+                <ul id="chat-all-user-list">
+                    <li id="chat-tpl-add-user" class="chat-user-add webim_hidden"><img src="/style/img/chat/webim_online.gif" /><span>&nbsp;</span></li>
+                </ul>
+            </div> -->
+        </div>
+        <div class="webim_chat_main_right">
+            <p>成员列表(<span id="chat-dialog-user-num-online">0</span>/<span id="chat-dialog-user-num-total">0</span>)</p>
+            <ul id="chat-dialog-user-list">
+                <li id="chat-tpl-list-user" class="chat-user webim_hidden"><img src="/style/img/chat/webim_online.gif" /><input type="hidden" class="socketId" /><span class="chat-user-name">&nbsp;</span></li>
+            </ul>
+        </div>
+        <div class="webim_chat_main_right_chatlog" id="chat-log">
+            <div class="webim_chat_main_right_chatlogtitle">聊天记录(共<span id="chat-log-num">0</span>条)</div>
+            <div class="webim_chat_main_right_chatloglist">
+                <p><span class="webim_chat_content_username">&nbsp;</span><span class="webim_chat_content_time">&nbsp;</span></p>
+                <p class="webim_chat_content_p">&nbsp;</p><!-- <img src="/style/img/chat/Face/22.gif" /> -->
+            </div>
+        </div>
+    </div>
+</div>

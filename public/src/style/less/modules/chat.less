@@ -1,0 +1,85 @@
+html{_overflow:hidden;} 
+body{_height:100%;_overflow:auto;} 
+#rightform form{position:absolute;right:30px;top:50px;}
+.webim_hidden{ display:none;}
+.webim_user{ background:url("/style/img/chat/webimicon.gif") 0 -80px; width:38px; height:26px; position:fixed; bottom:0; right:10px; cursor:pointer; text-align:center;_position:absolute;_right:24px;}
+.webim_user img{ width:15px; height:15px; border:1px solid #FFF; margin:5px auto auto auto; }
+.webim_userlist{ background:url("/style/img/chat/webimicon.gif") 0 -110px; width:160px; height:220px;position:fixed; bottom:25px; right:10px; display:none; _position:absolute;_right:24px;}
+.webim_user_top{font-size:12px; text-align:left; height:25px; overflow:hidden;}
+.webim_user_top_title{ color:#3e3e3e;display:block; float:left; padding:7px 3px 0 10px;}
+.webim_user_top_clear{ background:url("/style/img/chat/webimicon.gif") -100px -80px; width:36px; height:15px; text-indent:-999px; overflow:hidden; display:block;float:left; margin:5px 0 0 0;cursor:pointer;}
+.webim_user_top_min{ background:url("/style/img/chat/webimicon.gif") -50px -80px; width:15px; height:15px; text-indent:-999px; overflow:hidden; display:block;float:right; margin:5px 7px 0 0;cursor:pointer;}
+.webim_user_list{ text-align:left; font:12px Arial,"宋体"; height:185px;padding:5px; overflow-x:auto;}
+.webim_user_list ul{ margin:0; padding:0;}
+.webim_user_list li{list-style:none; color:#060606; height:22px; line-height:22px;cursor:pointer;}
+.webim_user_list li.hover { background:#f0f5f0;}
+.webim_user_list li.offline{ color:#666;}
+.webim_user_list li img{ border-right:1px solid #dbe7db;border-bottom:1px solid #dbe7db; width:15px; height:15px; margin:3px 4px 0 5px; float:left;}
+.webim_user_list li span{float:left;}
+
+.webim_chat{ border:1px solid #929a92; background:#FFF url("/style/img/chat/webimicon.gif") bottom; width:420px; height:260px; padding:30px 0 36px 0;position:fixed; bottom:50px; right:340px; display:none; _position:absolute;}
+.webim_chatlog{ border:1px solid #929a92; background:#FFF url("/style/img/chat/webimicon.gif") bottom; width:560px; height:260px; padding:30px 0 36px 0;position:fixed; bottom:50px; right:200px;_position:absolute;}
+
+.webim_chat_top{background:#e8f0e8 url("/style/img/chat/webimicon.gif") repeat-x; height:30px;width:100%; overflow:hidden;position:absolute; top:0; cursor: move;font:12px Arial,"宋体"; text-align:left; line-height:31px;}
+.webim_chat_top img{width:15px; height:15px; border:1px solid #FFF; float:left; margin:6px 3px 0 10px; cursor:default;}
+.webim_chat_top_username{ font-weight:bold; color:#060606;float:left; margin-right:5px; cursor:default;}
+.webim_chat_top_condition{ float:left; color:#444; cursor:default;}
+.webim_chat_top_min{background:url("/style/img/chat/webimicon.gif") -50px -80px; width:15px; height:15px; text-indent:-999px; overflow:hidden; display:block;float:right; margin-top:7px;cursor:pointer;}
+.webim_chat_top_close{background:url("/style/img/chat/webimicon.gif") -70px -80px; width:15px; height:15px; text-indent:-999px; overflow:hidden; display:inline-block;float:right; margin:7px 8px 0 3px;cursor:pointer;}
+.webim_chat_main{ background:#FFF; width:100%; height:100%; position:relative; text-align:left;}
+.webim_chat_main_left{ position:absolute;width:279px; left:0;}
+.webim_chat_main_left form{ margin:0; padding:0;}
+.webim_chat_main_left_content{ margin:1px; height:163px; padding:5px 5px 5px 10px; overflow-y:auto;font:12px Arial,"宋体"; word-wrap:break-word;}
+.webim_chat_main_left_content p{ margin:5px 0;  line-height:18px;}
+.webim_chat_content_username{ color:#555;}
+.webim_chat_content_time{ color:#999; margin-left:5px;}
+.webim_chat_content_p{ padding-left:12px; color:#333;}
+.webim_chat_content_p img{ width:20px; height:20px; margin:0 2px;}
+.webim_chat_content_notice { background-color: #ddd; }
+.webim_chat_main_left_ctrl{ height:26px;background:#eff5ef url("/style/img/chat/webimicon.gif") 0 -40px; overflow:hidden;}
+
+.webim_chat_ctrl_face,.webim_chat_ctrl_clear,.webim_chat_ctrl_adduser{float:left; width:18px; height:18px; display:block; overflow:hidden; text-indent:-999px;cursor:pointer;}
+.webim_chat_ctrl_face{background:url("/style/img/chat/webimicon.gif") 0 -370px; margin:5px 8px 0 12px; display:inline;}
+.webim_chat_ctrl_clear{background:url("/style/img/chat/webimicon.gif") -40px -370px;margin:6px 8px 0 0;}
+.webim_chat_ctrl_adduser{background:url("/style/img/chat/webimicon.gif") -80px -370px;margin:6px 0 0 0;}
+
+.webim_chat_face{ width:270px; height:115px; overflow:hidden; border:1px solid #CCC; background:#FFF; position:absolute; top:58px; left:4px;display:none; }
+.webim_chat_face ul{ margin:0; padding:5px;width:270px; height:115px; }
+.webim_chat_face li{ list-style:none; float:left; width:20px; height:20px; overflow:hidden; margin:3px; cursor:pointer;}
+
+.webim_chat_adduserlist{font:12px Arial,"宋体"; width:180px; height:250px; border:1px solid #CCC; background:#FFF; position:absolute; left:60px; top:-77px; display:none;}
+.webim_chat_adduserlist p{ height:21px;width:180px; border-bottom:1px solid #DDD; background:#f0f5f0; margin:0; padding:0; line-height:22px; overflow:hidden; color:#666; text-indent:10px; }
+.webim_chat_adduserlist ul{ margin:0; padding:0;width:178px; height:226px; border:1px solid #FFF; overflow-y:auto;}
+.webim_chat_adduserlist li{list-style:none; color:#060606; height:22px; line-height:22px; padding-left:5px;cursor:pointer;}
+.webim_chat_adduserlist li.hover { background:#f0f5f0 url("/style/img/chat/webimicon.gif") 120px -460px;}
+.webim_chat_adduserlist li.offline{ color:#666;}
+.webim_chat_adduserlist li img{ border-right:1px solid #dbe7db;border-bottom:1px solid #dbe7db; width:15px; height:15px; margin:3px 4px 0 5px; float:left;}
+.webim_chat_adduserlist li span{float:left;}
+
+.webim_chat_ctrl_chatlog,.webim_chat_ctrl_chatlogon{float:right;display:block;overflow:hidden;margin:4px 3px 0 0; color:#555; font-size:12px;cursor:pointer;}
+.webim_chat_ctrl_chatlog{ width:75px;height:19px;background:url("/style/img/chat/webimicon.gif") -115px -367px no-repeat;line-height:20px;text-indent:20px;}
+.webim_chat_ctrl_chatlogon{ width:73px;height:17px;background:#FFF url("/style/img/chat/webimicon.gif") -116px -368px no-repeat; border:1px solid #e3e6e3;line-height:18px;text-indent:19px;}
+
+.webim_chat_main_left_ipt{ margin:0; padding:0; height:59px; overflow:hidden;}
+.webim_chat_main_left_ip{ float:left; width:267px; height:47px; border:1px solid #FFF; margin:0; padding:5px;line-height:25px;overflow-y:auto;font:12px Arial,"宋体"; color:#444;}
+.webim_chat_main_left_etr{ padding:7px 0 0 195px;}
+.webim_chat_main_left_et{ width:60px; height:19px;background:url("/style/img/chat/webimicon.gif") 0 -400px; border:none; text-indent:-999px; float:left; cursor:pointer;}
+.webim_chat_main_left_cs{ width:14px; height:19px;background:#eff5ef url("/style/img/chat/webimicon.gif") -60px -400px; display:block; overflow:hidden; float:left;text-indent:-999px;cursor:pointer;}
+
+.webim_chat_left_send{ width:110px; height:40px; padding:5px; border:1px solid #bac0ba; background:#FFF; position:absolute; top:290px; left:195px;font:12px Arial,"宋体"; display:none;}
+.webim_chat_left_send p{ height:20px; overflow:hidden; margin:0; padding:0; color:#444; line-height:21px; text-indent:15px; cursor:pointer;}
+.webim_chat_left_send p.on{ background:url("/style/img/chat/webimicon.gif") 2px -424px;}
+
+.webim_chat_main_right{ width:140px; overflow-x:hidden; overflow-y:auto; background:#FFF;height:285px; position:absolute; right:0; border-left:1px solid #bac0ba; border-bottom:1px solid #bac0ba;font:12px Arial,"宋体";}
+.webim_chat_main_right p{ width:140px; height:22px; background:#f0f5f0 url("/style/img/chat/webimicon.gif") 0 -340px;  margin:0; overflow:hidden; line-height:22px; color:#666; text-indent:10px;}
+.webim_chat_main_right ul{ margin:0; padding:5px;}
+.webim_chat_main_right li{list-style:none; color:#060606; height:22px; line-height:22px;}
+.webim_chat_main_right li.offline{ color:#666;}
+.webim_chat_main_right li img{ border-right:1px solid #dbe7db;border-bottom:1px solid #dbe7db; width:15px; height:15px; margin:3px 4px 0 5px; float:left;}
+.webim_chat_main_right li span{float:left;}
+.webim_chat_main_right li:hover {cursor: pointer;}
+
+.webim_chat_main_right_chatlog{ width:280px; overflow:hidden; background:#FFF;height:285px; position:absolute; right:0; border-left:1px solid #bac0ba; border-bottom:1px solid #bac0ba;font:12px Arial,"宋体"; display:none;}
+.webim_chat_main_right_chatlogtitle{ width:280px; height:22px; background:#f0f5f0 url("/style/img/chat/webimicon.gif") 0 -485px;  margin:0; overflow:hidden; line-height:22px; color:#666; text-indent:10px;}
+.webim_chat_main_right_chatloglist{ margin:1px; height:251px; padding:5px 5px 5px 10px; overflow-y:auto;font:12px Arial,"宋体";}
+.webim_chat_main_right_chatloglist p{ margin:5px 0;  line-height:18px;}
